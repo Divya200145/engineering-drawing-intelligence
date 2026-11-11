@@ -1,0 +1,20 @@
+{
+  "evaluation_status": "POST_VISUAL_AUDIT_REQUIRES_FINAL_VALIDATION",
+  "drawing_id": "0",
+  "total_annotations": 84,
+  "eligible_annotations": 79,
+  "unsupported_annotations": 5,
+  "ocr_predictions": 39,
+  "true_positives": 38,
+  "false_positives": 1,
+  "false_negatives": 41,
+  "precision": 0.9743589743589743,
+  "recall": 0.4810126582278481,
+  "f1": 0.6440677966101694,
+  "limitations": [
+    "Single synthetic drawing",
+    "Annotation completeness and tile boundaries require final validation",
+    "Five ERV identifiers excluded from baseline-format evaluation",
+    "Not evidence for historical 90 percent accuracy claim"
+  ]
+}

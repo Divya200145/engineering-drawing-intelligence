@@ -1,0 +1,7 @@
+drawing_id,tag,review_status,notes
+0,ST-99408,confirmed,Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,AB-10000,confirmed,Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,KL-03048,confirmed,Visually confirmed as KL-03048; leading zero preserved
+0,UV-26488,confirmed,Visually confirmed in drawing screenshot
+0,WX-12925,confirmed,Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,CV-20158,confirmed,Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions

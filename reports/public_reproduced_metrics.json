@@ -1,0 +1,11 @@
+{
+  "true_positives": 38,
+  "false_positives": 1,
+  "false_negatives": 41,
+  "ground_truth_count": 79,
+  "prediction_count": 39,
+  "precision": 0.9743589743589743,
+  "recall": 0.4810126582278481,
+  "f1": 0.6440677966101694,
+  "matching": "one-to-one drawing_id and normalized exact tag; duplicates retained"
+}

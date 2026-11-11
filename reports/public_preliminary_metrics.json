@@ -1,0 +1,20 @@
+{
+  "evaluation_status": "PRELIMINARY_INCOMPLETE_GROUND_TRUTH",
+  "drawing_id": "0",
+  "dataset": "PID2Graph public synthetic drawing",
+  "scope": "Single-hyphen engineering identifiers matching baseline pattern",
+  "eligible_annotations": 60,
+  "predictions": 39,
+  "true_positives": 38,
+  "false_positives": 1,
+  "false_negatives": 22,
+  "precision": 0.9743589743589743,
+  "recall": 0.6333333333333333,
+  "f1": 0.7676767676767676,
+  "limitations": [
+    "Ground-truth annotation completeness not yet established",
+    "Only one synthetic drawing evaluated",
+    "ERV-4-17 excluded from baseline-format scope",
+    "Not evidence for historical 90 percent accuracy claim"
+  ]
+}

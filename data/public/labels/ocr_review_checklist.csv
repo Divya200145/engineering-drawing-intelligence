@@ -1,0 +1,13 @@
+drawing_id,tag,ocr_occurrences,review_status,visually_confirmed_occurrences,notes
+0,AB-37581,1,confirmed,1,Confirmed in user-provided drawing screenshot above valve symbol
+0,AB-64562,1,confirmed,1,Confirmed in user-provided screenshot above valve symbol
+0,BL-2922,1,confirmed,1,Confirmed in pipe label 5-inch BL-2922
+0,CS-93,1,confirmed,1,Confirmed beside rectangular equipment symbol
+0,GD-7260,1,confirmed,1,Confirmed in screenshot as part of pipe label 2-inch GD-7260
+0,GH-22397,1,confirmed,1,Confirmed in user-provided screenshot above valve symbol
+0,J-28593,1,incorrect_ocr,0,OCR predicted J-28593; drawing screenshot clearly reads IJ-28593
+0,JJ-2338,1,confirmed,1,Confirmed in screenshot as part of pipe label 8-inch JJ-2338
+0,KL-57680,1,confirmed,1,Confirmed in screenshot below valve symbol near top center
+0,LG-10,4,confirmed_partial,5,"Five distinct occurrences visually confirmed: 154/389, 567/248, 978/222, 691/360, 542/903; OCR predicted 4"
+0,OP-83167,1,confirmed,1,Confirmed in screenshot above valve symbol
+0,ST-55280,1,confirmed,1,Confirmed in screenshot below valve symbol

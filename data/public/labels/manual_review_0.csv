@@ -1,0 +1,85 @@
+drawing_id,tag,section,review_status,notes
+0,GG-7337,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,RV-40780,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,CS-38,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,KL-46122,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,ST-72997,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,MN-33662,section_1_1,visually_verified,Read from drawing screenshot; provisional transcription
+0,DV-47557,section_1_2,visually_verified,Confirmed in section overview screenshot
+0,GH-99374,section_1_2,visually_verified,Confirmed in section overview screenshot
+0,EF-74986,section_1_2,visually_verified,Confirmed in section overview screenshot
+0,AV-5047,section_1_2,visually_verified,Confirmed in section overview screenshot
+0,LJ-51122,section_1_2,visually_verified,Confirmed in section overview screenshot
+0,ERV-4-17,section_1_2,visually_verified,Confirmed in section overview screenshot; ERV-4-17 excluded from baseline regex evaluation
+0,DV-20320,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,CD-43921,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,RV-85287,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,RV-46595,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,OP-04650,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,EF-85372,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,EF-09061,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,WX-19741,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,AB-95169,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,WX-22621,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,KL-65505,section_2_1,visually_verified,Confirmed in section 2.1 drawing screenshot
+0,KL-08359,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,OY-1038,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,JF-4524,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,UV-49567,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,UV-75579,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,DV-03896,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,OP-75472,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,UV-18264,section_2_2,visually_verified,Corrected from DV-18264 after visual verification in audit_r3_c3
+0,DV-66530,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,CD-23760,section_2_2,visually_verified,Confirmed in section 2.2 drawing screenshot
+0,IJ-28593,section_2_1,visually_verified,Confirmed in screenshot; OCR incorrectly predicted J-28593
+0,LG-10,audit_r3_c3,visually_verified,Visually confirmed LG-10 box 154/389
+0,LG-10,audit_r2_c1,visually_verified,Visually confirmed LG-10 box 567/248
+0,LG-10,audit_r1_c1,visually_verified,Visually confirmed LG-10 box 978/222
+0,LG-10,audit_r3_c1,visually_verified,Visually confirmed LG-10 box 691/360
+0,LG-10,audit_r3_c2,visually_verified,Visually confirmed LG-10 box 542/903
+0,AB-37581,audit_r3_c2,visually_verified,Confirmed against drawing screenshot; section to verify
+0,AB-64562,audit_r3_c2,visually_verified,Confirmed against drawing screenshot; section to verify
+0,BL-2922,audit_r3_c1,visually_verified,Confirmed against drawing screenshot; section to verify
+0,CS-93,audit_r2_c1,visually_verified,Confirmed against drawing screenshot; section to verify
+0,GD-7260,audit_r2_c2,visually_verified,Confirmed against drawing screenshot; section to verify
+0,GH-22397,audit_r2_c1,visually_verified,Confirmed against drawing screenshot; section to verify
+0,JJ-2338,audit_r2_c2,visually_verified,Confirmed against drawing screenshot; section to verify
+0,KL-57680,audit_r2_c3,visually_verified,Confirmed against drawing screenshot; section to verify
+0,OP-83167,audit_r3_c2,visually_verified,Confirmed against drawing screenshot; section to verify
+0,ST-55280,audit_r3_c1,visually_verified,Confirmed against drawing screenshot; section to verify
+0,ST-99408,audit_r1_c1,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,AB-10000,audit_r1_c1,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,KL-03048,audit_r3_c2,visually_verified,Visually confirmed missed identifier; Visually confirmed as KL-03048; leading zero preserved
+0,UV-26488,audit_r3_c2,visually_verified,Visually confirmed missed identifier; Visually confirmed in drawing screenshot
+0,WX-12925,audit_r3_c1,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,CV-20158,audit_r2_c3,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions
+0,KL-34270,audit_r3_c1,visually_verified,Confirmed during additional drawing review
+0,WX-02629,audit_r2_c1,visually_verified,Confirmed during additional drawing review
+0,RV-96824,audit_r2_c1,visually_verified,Confirmed during additional drawing review
+0,CV-01515,audit_r2_c1,visually_verified,Confirmed during additional drawing review
+0,ST-09951,audit_r3_c2,visually_verified,Confirmed during additional drawing review
+0,WX-18187,audit_r3_c2,visually_verified,Confirmed during additional drawing review
+0,UV-69206,audit_r1_c1,visually_verified,Confirmed in first full-drawing audit section
+0,WF-6358,audit_r1_c1,visually_verified,Confirmed in first full-drawing audit section
+0,ST-76052,audit_r1_c2,visually_verified,Confirmed in second full-drawing audit section
+0,QR-68926,audit_r1_c2,visually_verified,Confirmed in second full-drawing audit section
+0,HQ-2108,audit_r1_c2,visually_verified,Confirmed in second full-drawing audit section
+0,ERV-4-39,audit_r1_c2,visually_verified,Confirmed in second full-drawing audit section
+0,CD-8752,audit_r1_c3,visually_verified,Confirmed in third full-drawing audit section
+0,EF-62161,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,QR-76397,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,CV-10515,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,UV-97976,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,CS-48,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,EF-32053,audit_r2_c2,visually_verified,Confirmed in sixth drawing audit section
+0,ERV-0-44,audit_r2_c2,visually_verified,Exact spelling confirmed using enlarged screenshot
+0,ERV-4-67,audit_r2_c3,visually_verified,Confirmed in seventh drawing audit section
+0,CD-36264,audit_r2_c3,visually_verified,Confirmed in seventh drawing audit section
+0,CD-23670,audit_r2_c3,visually_verified,Confirmed in seventh drawing audit section
+0,NL-5583,audit_r3_c1,visually_verified,Confirmed in ninth drawing audit section
+0,ERV-5-14,audit_r3_c1,visually_verified,Confirmed in ninth drawing audit section
+0,JJ-0094,audit_r3_c2,visually_verified,Confirmed in tenth drawing audit section
+0,CD-82721,audit_r3_c2,visually_verified,Confirmed in tenth drawing audit section
+0,CS-21,audit_r3_c2,visually_verified,Confirmed in tenth drawing audit section
+0,CS-93,audit_r3_c2,visually_verified,Second distinct CS-93 occurrence confirmed in drawing screenshot

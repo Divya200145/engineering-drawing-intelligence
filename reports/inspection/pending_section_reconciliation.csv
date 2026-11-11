@@ -1,0 +1,28 @@
+original_csv_row,drawing_id,tag,current_section,review_status,notes,verified_section,verification_evidence
+36,0,LG-10,section_pending,visually_verified,Visually confirmed LG-10 box 154/389,audit_r3_c3,Visual comparison with original drawing and audit tile
+37,0,LG-10,section_pending,visually_verified,Visually confirmed LG-10 box 567/248,audit_r2_c1,Visual comparison with original drawing and audit tile
+38,0,LG-10,section_pending,visually_verified,Visually confirmed LG-10 box 978/222,audit_r1_c1,Visual comparison with original drawing and audit tile
+39,0,LG-10,section_pending,visually_verified,Visually confirmed LG-10 box 691/360,audit_r3_c1,Visual comparison with original drawing and audit tile
+40,0,LG-10,section_pending,visually_verified,Visually confirmed LG-10 box 542/903,audit_r3_c2,Visual comparison with original drawing and audit tile
+41,0,AB-37581,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r3_c2,Visual comparison with original drawing and audit tile
+42,0,AB-64562,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r3_c2,Visual comparison with original drawing and audit tile
+43,0,BL-2922,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r3_c1,Visual comparison with original drawing and audit tile
+44,0,CS-93,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r2_c1,Visual comparison with original drawing and audit tile
+45,0,GD-7260,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r2_c2,Visual comparison with original drawing and audit tile
+46,0,GH-22397,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r2_c1,Visual comparison with original drawing and audit tile
+47,0,JJ-2338,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r2_c2,Visual comparison with original drawing and audit tile
+48,0,KL-57680,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r2_c3,Visual comparison with original drawing and audit tile
+49,0,OP-83167,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r3_c2,Visual comparison with original drawing and audit tile
+50,0,ST-55280,section_pending,visually_verified,Confirmed against drawing screenshot; section to verify,audit_r3_c1,Visual comparison with original drawing and audit tile
+51,0,ST-99408,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions,audit_r1_c1,Visual comparison with original drawing and audit tile
+52,0,AB-10000,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions,audit_r1_c1,Visual comparison with original drawing and audit tile
+53,0,KL-03048,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed as KL-03048; leading zero preserved,audit_r3_c2,Visual comparison with original drawing and audit tile
+54,0,UV-26488,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed in drawing screenshot,audit_r3_c2,Visual comparison with original drawing and audit tile
+55,0,WX-12925,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions,audit_r3_c1,Visual comparison with original drawing and audit tile
+56,0,CV-20158,section_pending,visually_verified,Visually confirmed missed identifier; Visually confirmed in user-provided drawing screenshot; absent from baseline OCR predictions,audit_r2_c3,Visual comparison with original drawing and audit tile
+57,0,KL-34270,section_pending,visually_verified,Confirmed during additional drawing review,audit_r3_c1,Visual comparison with original drawing and audit tile
+58,0,WX-02629,section_pending,visually_verified,Confirmed during additional drawing review,audit_r2_c1,Visual comparison with original drawing and audit tile
+59,0,RV-96824,section_pending,visually_verified,Confirmed during additional drawing review,audit_r2_c1,Visual comparison with original drawing and audit tile
+60,0,CV-01515,section_pending,visually_verified,Confirmed during additional drawing review,audit_r2_c1,Visual comparison with original drawing and audit tile
+61,0,ST-09951,section_pending,visually_verified,Confirmed during additional drawing review,audit_r3_c2,Visual comparison with original drawing and audit tile
+62,0,WX-18187,section_pending,visually_verified,Confirmed during additional drawing review,audit_r3_c2,Visual comparison with original drawing and audit tile

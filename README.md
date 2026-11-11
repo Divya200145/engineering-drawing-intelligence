@@ -1,57 +1,146 @@
-# Engineering Drawing Tag Extraction — Public Reproduction Starter
+# Engineering Drawing Intelligence — OCR Identifier Extraction
 
-**Status: baseline implementation and synthetic smoke test only. NOT a completed public-dataset evaluation.**
+**Status:** Exploratory public-dataset evaluation completed. Further validation required.
 
-This independently authored starter project is intended to make equipment-tag OCR and its evaluation reproducible. It is **not evidence of the previously stated 90% result**, and it does not claim to reproduce a prior project.
+## Project Overview
 
-## What is included
-- An OCR pipeline using Tesseract via `pytesseract` to identify equipment tags in images.
-- Deterministic, one-to-one exact-match evaluation, with precision, recall and F1.
-- Synthetic demonstration drawing and human-specified demonstration labels, explicitly marked as **synthetic**.
-- Tests, data format, CLI, and a report template.
+This project implements a reproducible baseline for extracting identifier-shaped text from engineering drawings using optical character recognition (OCR).
 
-## Public engineering datasets to investigate
-- PID2Graph: https://github.com/LatentSpaceIITB/pid_drawings
-- PIDQA: https://github.com/mgupta70/PIDQA
-- Zenodo P&ID source: https://zenodo.org/records/8028570
+The pipeline combines Tesseract OCR, image preprocessing, regular-expression-based identifier extraction, and exact-match evaluation.
 
-**These are candidate sources, not a claim that their labels support equipment-tag OCR.** Check licensing, actual contents, and annotation coverage before using any. Do not copy protected images into this repo without permission.
+The objective is to measure extraction performance, understand failure cases, and establish a baseline for future improvements.
+
+## Technologies
+
+- Python
+- Tesseract OCR and pytesseract
+- Image preprocessing
+- Regular expressions
+- CSV and JSON
+- Pytest
+- GitHub
+
+## Dataset
+
+The exploratory benchmark uses one publicly sourced synthetic P&ID drawing from PID2Graph (Zenodo record 14803338).
+
+The accompanying GraphML file contains diagram component and connectivity annotations, not verified identifier transcriptions.
+
+A project reviewer manually recorded 84 identifier occurrences.
+
+- Total annotations: 84
+- Eligible identifier occurrences: 79
+- Excluded two-hyphen ERV identifiers: 5
+- OCR predictions: 39
+
+The benchmark evaluates identifier-shaped text rather than independently verified equipment-tag classifications.
+
+See `dataset_sources.md` for dataset provenance.
+
+## Benchmark Results
+
+| Metric | Result |
+|---|---:|
+| Ground-truth occurrences | 79 |
+| OCR predictions | 39 |
+| True positives | 38 |
+| False positives | 1 |
+| False negatives | 41 |
+| Precision | 97.44% |
+| Recall | 48.10% |
+| F1 score | 64.41% |
+
+The evaluation uses normalized exact-string matching within each drawing and retains duplicate identifier occurrences.
+
+The results are reproducible from the saved ground-truth and prediction CSV files. They do not establish full end-to-end OCR reproducibility.
 
 ## Installation
-Python 3.10+; Tesseract OCR must be installed separately:
-- Ubuntu: `sudo apt-get install tesseract-ocr`
-- macOS (Homebrew): `brew install tesseract`
 
-```bash
-python -m pip install -r requirements.txt
-python -m pytest -q
-python -m src.extract --input data/demo/images --output reports/demo_predictions.csv
-python -m src.evaluate --truth data/demo/labels/ground_truth.csv --predictions reports/demo_predictions.csv --output reports/demo_metrics.json
-```
+Requirements:
 
-## Data format
-Ground truth CSV columns: `drawing_id,tag`. One row per actual tag occurrence. Predicted CSV columns: `drawing_id,tag`. Duplicate tags count as separate occurrences. A prediction can match at most one ground-truth row. Matching uses uppercasing and trimming only. Spatial coordinates are NOT currently evaluated.
+- Python 3.10 or later
+- Tesseract OCR
 
-## Public benchmark protocol (not yet performed)
-1. Select licensed public P&ID drawings, record URLs, versions, file hashes and permission terms in `dataset_sources.md`.
-2. Manually transcribe visible equipment tags with a written tagging policy, recording drawing IDs. Keep these labels independent of OCR predictions.
-3. Partition drawings into development and held-out test groups; freeze test labels before tuning.
-4. Run `python -m src.extract --input PATH --output reports/public_predictions.csv`.
-5. Run `python -m src.evaluate --truth PATH_TO_LABELED_CSV --predictions reports/public_predictions.csv --output reports/public_metrics.json`.
-6. Publish the complete test manifest, counts, per-drawing predictions, failure analysis and actual measured scores.
-7. Never call a new score a reproduction of an earlier 90% claim unless the original evidence exists.
+On Ubuntu:
+
+`sudo apt-get install tesseract-ocr`
+
+On macOS with Homebrew:
+
+`brew install tesseract`
+
+Install Python dependencies:
+
+`python -m pip install -r requirements.txt`
+
+Run tests:
+
+`python -m pytest -q`
+
+## Reproduce the Public Evaluation
+
+From the repository root, run:
+
+`python src/evaluate.py --truth data/public/labels/eligible_truth_0.csv --predictions reports/public_predictions.csv --output reports/public_reproduced_metrics.json`
+
+This evaluates the saved OCR predictions against the 79 eligible manually reviewed identifier occurrences.
+
+## Demonstration Pipeline
+
+Run the synthetic demonstration extraction:
+
+`python -m src.extract --input data/demo/images --output reports/demo_predictions.csv`
+
+Evaluate the demonstration:
+
+`python -m src.evaluate --truth data/demo/labels/ground_truth.csv --predictions reports/demo_predictions.csv --output reports/demo_metrics.json`
+
+The demonstration and public exploratory benchmark are separate evaluations.
+
+## Evaluation Methodology
+
+The evaluator:
+
+1. Normalizes identifiers by removing surrounding whitespace and converting text to uppercase.
+2. Matches predictions and annotations by drawing ID and exact identifier string.
+3. Retains repeated identifier occurrences.
+4. Counts true positives, false positives, and false negatives.
+5. Calculates precision, recall, and F1 score.
+
+Spatial bounding boxes and diagram connectivity are not evaluated.
 
 ## Limitations
-The baseline uses OCR and a conservative tag pattern; it does not understand diagram connectivity, recognize all symbols, or validate engineering semantics. The synthetic smoke test is not representative of real P&IDs. OCR requires Tesseract installed on the machine. False positives and misses are expected on dense drawings.
 
-## Provenance and disclosure
-Created as a new, independent reproducible baseline after the interview. It does not establish what dataset or results were used in any prior project.
+- The public benchmark covers only one synthetic drawing.
+- The annotations were manually reviewed but not independently validated.
+- The annotation inventory may be incomplete.
+- Five two-hyphen ERV identifiers are outside the current evaluation scope.
+- Exact-string matching does not verify spatial localization.
+- The pipeline does not independently establish equipment-tag classification accuracy.
+- Results cannot be generalized to real industrial drawings.
 
-## Verified demonstration outputs
-See `reports/demo_predictions.csv`, `reports/demo_metrics.json`, and `reports/EVALUATION_METHODOLOGY.md` for the **synthetic-only** smoke test. See `PROJECT_STATUS.md` for an honest requirement-by-requirement checklist.
+## Future Improvements
 
-## Publish to GitHub
-1. Create a new public GitHub repository named `engineering-drawing-intelligence`.
-2. From this folder, run `git init && git add . && git commit -m "Add reproducible OCR baseline and transparent evaluation"`.
-3. Add the repository remote supplied by GitHub, then push your branch. Never upload company-proprietary drawings or credentials.
-4. Verify that GitHub Actions passes and that the README prominently identifies the public-benchmark work as pending.
+- Expand the dataset to multiple engineering drawings.
+- Independently validate the annotations.
+- Add bounding-box-level evaluation.
+- Investigate missed identifiers and OCR failure modes.
+- Improve preprocessing and extraction coverage.
+- Compare alternative extraction methods against the baseline.
+
+## Project Provenance
+
+This is an independently authored reproducible baseline developed after an interview discussion.
+
+A previously discussed 90% extraction result cannot be verified from the available original project materials. This benchmark does not establish or reproduce that earlier figure.
+
+## Documentation
+
+- `reports/FINAL_REPORT.md` — Evaluation results and limitations
+- `reports/EVALUATION_METHODOLOGY.md` — Evaluation methodology
+- `dataset_sources.md` — Dataset provenance
+- `PROJECT_STATUS.md` — Project progress and outstanding work
+
+## Responsible Use
+
+Use only datasets with appropriate permissions and attribution. Do not upload proprietary engineering drawings, credentials, or confidential company information.
